@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مجمع العائلة الطبي</title>
+    <link rel="preload" href="style/owl.carousel.min.css" as="style" />
+    <link rel="preload" href="style/font-awesome.min.css" as="font" />
+    <link rel="preload" href="style/bootstrap.rtl.min.css" as="style" />
+    <link rel="preload" href="style/all.min.css" as="style" />
+    <link rel="preload" href="style/style.css" as="style" />
+    <link rel="stylesheet" href="./style/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./style/font-awesome.min.css" />
+    <link rel="stylesheet" href="./style/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./js/jquery.min.js" defer></script>
+    <script src="./js/owl.carousel.min.js" defer></script>
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="./js/main.js" defer></script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+      </symbol>
+      <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+      </symbol>
+      <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </symbol>
+    </svg>
+    
+  </head>
+
+  <body>
+    <nav
+      dir="rtl"
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top navZ shadow"
+    >
+      <div class="container align-items-baseline">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item nav-item1 mx-2 position-relative">
+                <a class="nav-link active mainFont" aria-current="page" href="#"
+                  >الرئيسية
+                </a>
+              </li>
+              <li class="nav-item mx-2 position-relative">
+                <a class="nav-link mainFont" href="#blog">الخدمات</a>
+              </li>
+              <li class="nav-item mx-2 position-relative">
+                <a class="nav-link mainFont" href="#contact">تواصل معنا </a>
+              </li>
+              <li class="nav-item mx-2 position-relative">
+                <a class="nav-link mainFont" href="#about">من نحن </a>
+              </li>
+              <li class="nav-item mx-2 position-relative">
+                <a
+                  class="nav-link mainFont"
+                  href="https://yourmedicalfamily.com/eczane/"
+                  >الصيدليات المناوبة</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="navbar-brand" href="#"
+          ><div>
+            <img
+              id="mainLogo"
+              src="img/Al 3aela Logo-02 - Copy.webp"
+              alt="مجمع العائلة الطبي"
+            /></div
+        ></a>
+      </div>
+    </nav>
+    <!--  =============================================================================================== -->
+
+    <main class="mb-5" style="margin-top: 100px">
+      <div>
+        <div style="width: 100%; height: auto">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide position-relative mainFont"
+            data-bs-ride="carousel"
+          >
+            <div class="allCoursel">
+              <div class="mainH1 text-white">
+                <h1>مجمع العائلة الطبي</h1>
+                <h2>عائلتك الطبية</h2>
+                <p class="d-none d-sm-block">
+                  نقدم خدمات طبية بالتعاون مع المراكز التركية الرسمية
+                </p>
+
+                <div class="container">
+                  <p class="fs-2">
+                    <i class="fa-solid fa-people-group fs-3 p-1"></i>
+                    <span class="typed-text"></span
+                    ><span class="cursor"> </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/doctor-examining-his-young-patient.webp"
+                  class="d-block"
+                  data-bs-interval="10000"
+                  style="width: 100%; height: auto"
+                  alt="doctor examining his young patient"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/digital-composite-doctor-with-white-graph-with-flare-against-blurry-background-with-light-blue-overlay.webp"
+                  class="d-block"
+                  data-bs-interval="10000"
+                  style="width: 100%; height: auto"
+                  alt="digital composite doctor with white graph with flare against blurry background with light blue overlay"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/preparation-blood-test-by-female-doctor-medical-uniform-table-white-bright-room-nurse-pierces-patient-s-arm-vein-with-needle-blank-tube.webp"
+                  class="d-block"
+                  data-bs-interval="10000"
+                  style="width: 100%; height: auto"
+                  alt="preparation blood test by female doctor medical uniform table white bright room nurse pierces patient s arm vein with needle blank tube"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/specialist-standing-drugstore-holding-folder.webp"
+                  class="d-block"
+                  data-bs-interval="10000"
+                  style="width: 100%; height: auto"
+                  alt="specialist-standing-drugstore-holding-folder"
+                />
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- تصنيفات الاقسام-->
+    <section id="blog" class="my-5">
+      <div class="my-5">
+        <h3>الخدمات</h3>
+      </div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="row align-content-center justify-content-center">
+          <div class="m-sm-3 my-2 " style="width: 12rem">
+            <h4 class="text-center fs-5">التحاليل الطبية</h4>
+            <img
+              src="img/t7alil.webp"
+              class="card-img-top"
+              alt="Medical diagnostics "
+            />
+            <a
+              href="https://wa.me/905315130116?text=خدمة التحاليل الطبية"
+              class="btn btn-primary form-control bubbly-button"
+              target="_blank"
+              >طلب الخدمة</a
+            >
+          </div>
+          <div class="m-sm-3 my-2" style="width: 12rem">
+            <h4 class="text-center fs-5">الصيدلية</h4>
+            <img src="img/pharmacy.webp" class="card-img-top" alt="Pharmacy" />
+            <a
+              href="https://wa.me/905526403052?text=قسم الصيدلية وتوصيل الدواء "
+              class="btn btn-primary form-control bubbly-button"
+              target="_blank"
+              alt="pharmacy"
+              >طلب الخدمة</a
+            >
+          </div>
+          <!-- <div class="m-sm-3 my-2 " style="width: 12rem">
+            <h4 class="text-center fs-5">التمريض</h4>
+            <img
+              src="img/doctor-with-syringe-medical-services-concept.webp"
+              class="card-img-top"
+              alt="nursing"
+            />
+            <a
+              href="https://wa.me/905526527970"
+              class="btn btn-primary form-control bubbly-button"
+              target="_blank"
+              >طلب الخدمة</a
+            >
+          </div> -->
+          <div class="m-sm-3 my-2 " style="width: 12rem">
+            <h4 class="text-center fs-5">دليل العيادات</h4>
+            <img
+              src="img/clinics.webp"
+              class="card-img-top"
+              alt="clinics guide"
+            />
+            <a
+              href="https://wa.me/905526527970?text=قسم الدعم الفني ودليل العيادات "
+              class="btn btn-primary form-control bubbly-button"
+              target="_blank"
+              >طلب الخدمة</a
+            >
+          </div>
+          <div class="m-sm-3 my-2 " style="width: 12rem">
+            <h4 class="text-center fs-5">خدمة العملاء</h4>
+            <img
+              src="img/call center.webp"
+              class="card-img-top"
+              alt="customer service"
+            />
+            <a
+              href="https://wa.me/905315130116?text=قسم الاستقبال وخدمة الجمهور"
+              class="btn btn-primary form-control bubbly-button"
+              target="_blank"
+              >طلب الخدمة</a
+            >
+          </div>
+          <div class="m-sm-3 my-24 " style="width: 12rem">
+            <h4 class="text-center fs-5">الصيدلية المناوبة</h4>
+            <img
+              src="img/nbetoi.webp"
+              class="card-img-top"
+              alt="customer service"
+            />
+            <a
+              href="https://yourmedicalfamily.com/eczane/"
+              class="btn btn-primary form-control bubbly-button"
+              target="_blank"
+              >الصيدلية المناوبة</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  =============================================================================================== -->
+
+    <!-- المدونة-->
+    <section class="pt-5 modawana">
+      <div class="mt-3">
+        <h3>المدونة</h3>
+      </div>
+      <div class="container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="news-slider" class="owl-carousel">
+                <div class="post-slide">
+                  <div class="post-img">
+                    <img src="img/modawana1.webp" alt="blog1" class="shadow" />
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily/posts/439726854977133"
+                      class="over-layer"
+                      target="_blank"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                  </div>
+                  <div class="post-content">
+                    <h3 class="post-title">
+                      <a
+                        href="https://www.facebook.com/yourmedicalfamily/posts/439726854977133"
+                        target="_blank"
+                        >أضرار المضادات الحيوية على جسم الانسان</a
+                      >
+                    </h3>
+                    <p
+                      dir="rtl"
+                      class="post-description text-start"
+                      style="height: 192px; overflow: hidden"
+                    >
+                      يعاني الأشخاص الذين يتناولون المضادات الحيوية💊 بكثرة من
+                      مشكلة الفطريات وخاصةً في مناطق مثل فتحة المهبل والحلق
+                      والفم🤮 حيث أن كثرة استخدام المضادات الحيوية تعمل على قتل
+                      البكتيريا الضارة بالإضافة إلى البكتيريا النافعة والتي تعمل
+                      على حماية الجسم من الإصابة بتلك الفطريات.
+                    </p>
+                    <span class="post-date"
+                      ><i class="fa fa-clock-o"></i> 2022 / 11 / 04
+                    </span>
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily"
+                      class="read-more bubbly-button"
+                      target="_blank"
+                      >اقرأ المزيد</a
+                    >
+                  </div>
+                </div>
+
+                <div class="post-slide">
+                  <div class="post-img">
+                    <img src="img/modawana11.webp" alt="blog1" class="shadow" />
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily/posts/439657261650759"
+                      class="over-layer"
+                      target="_blank"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                  </div>
+                  <div class="post-content">
+                    <h3 class="post-title">
+                      <a
+                        href="https://www.facebook.com/yourmedicalfamily/posts/439657261650759"
+                        target="_blank"
+                        >تشخيص الغدة الدرقية عند الأطفال</a
+                      >
+                    </h3>
+                    <p
+                      dir="rtl"
+                      class="post-description text-start"
+                      style="height: 192px; overflow: hidden"
+                    >
+                      👈إنّ جميع الأطفال حديثي الولادة👩‍🍼 يخضعون لفحوصاتٍ روتينية
+                      للغدة الدرقية عند ولادتهم، وبشكلٍ عام، فإنّه توجد العديد
+                      من الفحوصات المُستخدمة لتشخيص قصور الغدة الدرقية لدى
+                      الأطفال،👶 نذكر منها فحص وظائف الدرقية: (بالإنجليزية:
+                      Thyroid Function test)، الذي يقيس مستوى هرمون الثيروكسين
+                      ومستوى الهرمون المحفّز للدرقية (بالإنجليزية:
+                      Thyroid-stimulating hormone) في الدّم، ففي حال كانت
+                      مستويات الهرمون المحفز للدرقية مرتفعة بينما مستويات
+                      الثيروكسين مُنخفضة فإنّ الطفل 👩‍🍼يُشخص بقصور الغدة الدرقية.
+                    </p>
+                    <span class="post-date"
+                      ><i class="fa fa-clock-o"></i> 2022 / 11 / 04
+                    </span>
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily"
+                      class="read-more bubbly-button"
+                      target="_blank"
+                      >اقرأ المزيد</a
+                    >
+                  </div>
+                </div>
+
+                <div class="post-slide">
+                  <div class="post-img">
+                    <img
+                      src="img/modawana111.webp"
+                      alt="blog1"
+                      class="shadow"
+                    />
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily/posts/439532748329877"
+                      class="over-layer"
+                      target="_blank"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                  </div>
+                  <div class="post-content">
+                    <h3 class="post-title">
+                      <a
+                        href="https://www.facebook.com/yourmedicalfamily/posts/439532748329877"
+                        target="_blank"
+                        >كسل الغدة الدرقية عند الأطفال</a
+                      >
+                    </h3>
+                    <p
+                      dir="rtl"
+                      class="post-description text-start"
+                      style="height: 192px; overflow: hidden"
+                    >
+                      كسل الغدة الدرقية عند الأطفال 👇يُعرف كسل الغدة الدرقية أو
+                      قصور الغدّة الدرقية أو خمول الغدة الدرقية (بالإنجليزية:
+                      Hypothyroidism) بأنّه أحد اضطرابات الغدة الدرقية المُتمثلة
+                      بإنتاج الغدة الدرقية لكمياتٍ غير كافيةٍ من هرموناتها، وهو
+                      من أكثر اضطربات الغدة الدرقية شيوعاً بين الأطفال👶، ومن
+                      الجدير بالذكر أن الطفل المُصاب بقصور الغدّة الدرقية يُظهر
+                      أعراضاً تختلف عن تلك المُصاحبة لقصور الدرقية لدى
+                      البالغين👨، ومن المهم التنويه إلى ضرورة علاج الأطفال👶
+                      المصابين بهذه الحالة مبكرًا وخاصة حديثي الولادة؛👩‍🍼
+                    </p>
+                    <span class="post-date"
+                      ><i class="fa fa-clock-o"></i> 2022 / 11 / 04
+                    </span>
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily"
+                      class="read-more bubbly-button"
+                      target="_blank"
+                      >اقرأ المزيد</a
+                    >
+                  </div>
+                </div>
+
+                <div class="post-slide">
+                  <div class="post-img">
+                    <img
+                      src="img/modawana1111.webp"
+                      alt="blog1"
+                      class="shadow"
+                    />
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily/posts/438939841722501"
+                      class="over-layer"
+                      target="_blank"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                  </div>
+                  <div class="post-content">
+                    <h3 class="post-title">
+                      <a
+                        href="https://www.facebook.com/yourmedicalfamily/posts/438939841722501"
+                        target="_blank"
+                        >أفضل الفيتامينات للجسم</a
+                      >
+                    </h3>
+                    <p
+                      dir="rtl"
+                      class="post-description text-start"
+                      style="height: 192px; overflow: hidden"
+                    >
+                      فيتامين أ تنقسم مصادر فيتامين أ إلى نوعين رئيسين، وهما
+                      يساهمان في تعزيز صحتك، وهما: ... فيتامين ب يُساهم فيتامين
+                      ب في تعزيز طاقتك⛷️ اليومية، والمحافظة على سلامة جهازك
+                      المناعي، وقدرة جسمك على امتصاص الحديد، فهو يعد من أفضل
+                      الفيتامينات للجسم. فيتامين ج 🍋. فيتامين د . فيتامين هـ .
+                      فيتامين ك.
+                    </p>
+                    <span class="post-date"
+                      ><i class="fa fa-clock-o"></i> 2022 / 11 / 03
+                    </span>
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily"
+                      class="read-more bubbly-button"
+                      target="_blank"
+                      >اقرأ المزيد</a
+                    >
+                  </div>
+                </div>
+
+                <div class="post-slide">
+                  <div class="post-img">
+                    <img
+                      src="img/modawana11111.webp"
+                      alt="blog1"
+                      class="shadow"
+                    />
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily/posts/438817741734711"
+                      class="over-layer"
+                      target="_blank"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                  </div>
+                  <div class="post-content">
+                    <h3 class="post-title">
+                      <a
+                        href="https://www.facebook.com/yourmedicalfamily/posts/438817741734711"
+                        target="_blank"
+                        >ما هي الفيتامينات</a
+                      >
+                    </h3>
+                    <p
+                      dir="rtl"
+                      class="post-description text-start"
+                      style="height: 192px; overflow: hidden"
+                    >
+                      الفيتامينات عبارة عن مركبات عضوية طبيعية، لازمة للجسم
+                      لأداء وظائفه على أكمل وجه، ومصادرها في اللحوم،🍖
+                      والأسماك،🍣 والخضروات،🥒🍆 والفاكهة🍑🍒، وعصير الفاكهة
+                      الطازج الذي يحتوي على نسبة عالية منها، وفي حال نقصها في
+                      الجسم تظهر بعض الأعراض على الشخص موضّحة وجود نقص فيتامين
+                      معيّن، ويتمّ الكشف عن النقص بواسطة الفحوصات المخبريّة🔬.
+                      ومن الأفضل أن يقوم كل شخص بعمل فحوصات💉 دورية لا تتجاوز
+                      الستة أشهر، للتأكّد من السلامة العامة، وخلو الشخص من
+                      الأمراض كالسكري، والكولسترول وغيرها.
+                    </p>
+                    <span class="post-date"
+                      ><i class="fa fa-clock-o"></i> 2022 / 11 / 03
+                    </span>
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily"
+                      class="read-more bubbly-button"
+                      target="_blank"
+                      >اقرأ المزيد</a
+                    >
+                  </div>
+                </div>
+
+                <div class="post-slide">
+                  <div class="post-img">
+                    <img
+                      src="img/modawana111111.webp"
+                      alt="blog1"
+                      class="shadow"
+                    />
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily/posts/438104835139335"
+                      class="over-layer"
+                      target="_blank"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                  </div>
+                  <div class="post-content">
+                    <h3 class="post-title">
+                      <a
+                        href="https://www.facebook.com/yourmedicalfamily/posts/438104835139335"
+                        target="_blank"
+                        >أعراض نقص الكالسيوم</a
+                      >
+                    </h3>
+                    <p
+                      dir="rtl"
+                      class="post-description text-start"
+                      style="height: 192px; overflow: hidden"
+                    >
+                      👈فقدان الأسنان بشكل غير متوقع😷. 👈تهيج اللثة. 👈هشاشة
+                      العظام (تفقد العظام كثافتها لأن الجسم يعوض نقص الكالسيوم
+                      منها، ما يجعلها أكثر عرضة للكسور). 👈تشنج عضلي أو شعور
+                      بوخز متكرر في العضلات (يساعد الكالسيوم العضلات على
+                      الانقباض والاسترخاء). 👈حرقان حول الفم والأصابع. 👈تعب
+                      شديد وشعور عام بالخمول😩
+                    </p>
+                    <span class="post-date"
+                      ><i class="fa fa-clock-o"></i> 2022 / 11 / 02
+                    </span>
+                    <a
+                      href="https://www.facebook.com/yourmedicalfamily"
+                      class="read-more bubbly-button"
+                      target="_blank"
+                      >اقرأ المزيد</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  =============================================================================================== -->
+
+    <!-- تواصل معنا -->
+
+    <section id="contact" class="my-5">
+      <div class="my-5">
+        <h3>تواصل معنا</h3>
+      </div>
+      <div class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-m-6 col-s-12 col-xs-12">
+              <form dir="rtl" class="w-100">
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    class="form-control normalFont"
+                    id="clientName"
+                    placeholder="الاسم"
+                  />
+                  <div id="nameFalse">
+
+                  </div>
+                </div>
+                <div class="my-4">
+                  <input
+                    type="text"
+                    class="form-control normalFont"
+                    id="clientMail"
+                    aria-describedby="emailHelp"
+                    placeholder="الايميل"
+                  />
+                  <div id="mailFalse">
+
+                  </div>
+                </div>
+                <textarea
+                  name=""
+                  class="form-control my-4 normalFont"
+                  id="clientProblem"
+                  cols="70"
+                  rows="10"
+                  placeholder="كيف يمكننا مساعدتك؟ "
+                ></textarea>
+                <div id="problemFalse">
+
+                </div>
+                <button type="button" id="contactBtn" class="btn btn-primary form-control mt-4">
+                  تواصل معنا
+                </button>
+              </form>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-m-6 col-s-12 col-xs-12">
+              <img
+                src="img/Rectangle 834.webp"
+                class="h-100 w-100"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  =============================================================================================== -->
+
+    <!-- من نحن -->
+
+    <section id="about">
+      <div class="container">
+        <div class="row flex-row-reverse">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-m-6 col-s-12 col-xs-12 bg-grey d-flex"
+          >
+            <div
+              class="flex-column justify-content-center align-content-center"
+            >
+              <h3>من نحن ؟</h3>
+              <div class="text-start px-3 py-3">
+                <span class="fs-3">مجمع العائلة الطبي</span>
+                <i class="fa-solid fa-people-group fs-3 p-1 mainColor"></i>
+              </div>
+              <div class="text-start mainColorBorder px-3 mx-4">
+                <p>
+                  مجمع العائلة الطبي<br> لأهلنا في إسطنبول نقدم خدمات
+                  طبية بالتعاون مع المراكز التركية الرسمية
+                </p>
+                <p>دواء- تحاليل- استشارات هاتفية – خدمات تمريضية</p>
+              </div>
+              <div class="text-start px-3 py-3">
+                <span class="w-100">صيدلي يتحدث اللغة العربية</span>
+                <i
+                  class="fa-solid fa-check fs-5 border border-3 border-white rounded-circle p-1 mainColor"
+                ></i>
+              </div>
+              <div class="text-start px-3 py-3">
+                <span class="">اطباء وكوادر عرب</span>
+                <i
+                  class="fa-solid fa-check fs-5 border border-3 border-white rounded-circle p-1 mainColor"
+                ></i>
+              </div>
+              <div class="text-start px-3 py-3">
+                <span class="">خدمات على مدار 24 ساعة</span>
+                <i
+                  class="fa-solid fa-check fs-5 border border-3 border-white rounded-circle p-1 mainColor"
+                ></i>
+              </div>
+              <div class="text-start px-3 py-3">
+                <span class="">خدمات الطوارئ</span>
+                <i
+                  class="fa-solid fa-check fs-5 border border-3 border-white rounded-circle p-1 mainColor"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-m-6 col-s-12 col-xs-12">
+            <img
+              class="w-100 h-100"
+              src="img/happy-medical-team-hospital.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  =============================================================================================== -->
+
+    <footer dir="rtl" class="bg-dark text-white py-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-7 text-center col-lg-4">
+            <div
+              class="d-flex justify-content-center justify-content-lg-start align-items-center my-3"
+            >
+              <div>
+                <a href="https://yourmedicalfamily.com/" target="_blank">
+                  <img src="img/0.webp" alt="Logo" class="hande-footer-img" />
+                </a>
+              </div>
+              <div class="mx-1 text-lg-center">مجمع العائلة الطبي</div>
+            </div>
+            <div class="my-3 text-sm-center text-lg-start">
+              نقدم خدمات طبية لأهلنا العرب في اسطنبول بالتعاون مع المراكز
+              التركية الرسمية
+            </div>
+            <div
+              class="my-3 d-flex justify-content-center justify-content-lg-start align-items-center"
+            >
+              <i class="fa-solid fa-phone fs-4 me-3"></i>
+              <a dir="ltr" class="anchorLine" href="tel:+90 (531) 513 01 16"
+                >+90 (531) 513 01 16</a
+              >
+            </div>
+            <div
+              class="my-3 d-flex justify-content-center justify-content-lg-start align-items-center"
+            >
+              <i class="fa-regular fa-envelope fs-4 me-3"></i>
+              <a class="anchorLine" href="mailto:info@yourmedicalfamily.com">
+                info@yourmedicalfamily.com</a
+              >
+            </div>
+          </div>
+
+          <div class="col-10 d-none d-lg-block col-lg-2">
+            <h4 class="my-3 fw-semibold">Quick Links</h4>
+            <p>FAQs</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+          </div>
+
+          <div class="col-10 d-none d-lg-block col-lg-2">
+            <h4 class="my-3 fw-semibold">اتصل بنا</h4>
+            <a
+              class="anchorLine"
+              href="http://fb.com/yourmedicalfamily"
+              target="_blank"
+              ><p>Facebook</p></a
+            >
+            <a
+              class="anchorLine"
+              href="http://wa.me/905315130116"
+              target="_blank"
+            >
+              <p>Whatsapp</p></a
+            >
+          </div>
+
+          <div class="col-10 d-lg-block col-lg-4 needs-validation" novalidate>
+            <h4 class="my-3 fw-semibold fs-4">اشترك في مجموعات الواتساب</h4>
+            <input
+              type="text"
+              id="phoneNum"
+              name="Snum"
+              class="form-control shadow-none mt-3 normalFont"
+              placeholder="ادخل رقم الواتساب الخاص بك"
+              required
+            />
+            <div id="regexFalse">
+
+            </div>
+            <button
+              dir="rtl"
+              type="button"
+              id="subscribeNow"
+              class="btn btn-info my-3"
+              
+            >
+              اشترك الان
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer>
+      <hr class="m-0" />
+      <div class="text-center bg-dark text-white p-2">
+        Copyright <span class="normalFont">@2022</span> مجمع العائلة الطبي
+      </div>
+    </footer>
+  </body>
+</html>
